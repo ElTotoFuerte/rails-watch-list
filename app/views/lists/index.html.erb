@@ -1,0 +1,9 @@
+
+<h1><i class="fas fa-film"></i>LOUNGE</h1>
+
+<p>Find a movie to watch. Share your favourites.</p>
+<%= link_to "Create a new movie list", new_list_path, class: "btn btn-banner" %>
+
+<% @lists.each do |list| %>
+  <h3><%= list.name %></h3>
+<% end %>
